@@ -9,7 +9,7 @@ export default function ApiProduct() {
         fetch(`https://dummyjson.com/products/${id}`)
             .then((res) => res.json())
             .then((json) => setProd(json))
-    }, [])
+    }, [id])
 
     let arr = [];
     for (let i in Prod.images) {
@@ -19,14 +19,15 @@ export default function ApiProduct() {
 
     return (
         <div>
-            <div
-                style={{
-                    backgroundImage: `linear-gradient(0deg,rgba(0,0,0,0),rgba(0,0,0,0.5)),url(${ankara2})`,
-                    height: "200px",
-                    marginTop: "-100px",
-                }}
-            ></div>
+
             <div className="row">
+                <div
+                    style={{
+                        backgroundImage: `linear-gradient(0deg,rgba(0,0,0,0),rgba(0,0,0,0.5)),url(${ankara2})`,
+                        height: "200px",
+                        marginTop: "-100px",
+                    }}
+                ></div>
 
                 <div className="col-sm-4">
                     {arr.map((v) => (

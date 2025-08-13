@@ -22,18 +22,11 @@ export default function Product() {
 
     return (
         <div>
-            <div
-                style={{
-                    backgroundImage: `linear-gradient(0deg,rgba(0,0,0,0),rgba(0,0,0,0.5)),url(${ankara2})`,
-                    height: "200px",
-                    marginTop: "-100px",
-                }}
-            ></div>
 
-            <div className="row">
+            <div className="row" style={{ backgroundColor: "#1c100f" }}>
                 {prod.products.map((product) => (
                     <div className="col-sm-4">
-                        <div className="card my-3 mx-5" style={{ width: "18rem" }}>
+                        <div className="text-white card my-3 mx-5" style={{ width: "18rem", backgroundColor: "#1c100f", border: "0.5px solid #cccccc" }}>
                             <img src={product.thumbnail} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title">{product.title}</h5>

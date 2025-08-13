@@ -4,6 +4,8 @@ import img1 from "../images1/img1.avif";
 import premium3 from "../images1/premium3.avif"
 import premium1 from "../images1/premium1.avif"
 import igor from "../images1/igor.jpg"
+import img2 from "../images1/img2.avif";
+
 import {
     FaFacebook,
     FaTwitter,
@@ -17,7 +19,7 @@ export default function Layout() {
 
     return (
         <div>
-            <nav className="navbar navbar-expand-lg bg-primary">
+            <nav className="navbar navbar-expand-lg" style={{ backgroundImage: `linear-gradient(0deg,rgba(0,0,0,0),rgba(0,0,0,0.5)), url(${img2})`, backgroundSize: "cover", backgroundPosition: "center", paddingBottom: "40px" }}>
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">
                         <img className="ms-3" src={img1} alt="img1" style={{ width: "75px", height: "75px", borderRadius: "50%" }} />
@@ -150,7 +152,7 @@ export default function Layout() {
 
             <Outlet />
 
-            <div className="container-fluid bg-primary my-5 p-5">
+            <div className="container-fluid  my-5 p-5" style={{ backgroundImage: `linear-gradient(0deg,rgba(0,0,0,0),rgba(0,0,0,0.5)), url(${img2})`, backgroundSize: "cover", backgroundPosition: "center" }}>
                 <div className="row ms-5">
                     <div className="col-sm-3">
                         <h5 className="ms-3 text-light ms-4">Menu</h5>
