@@ -10,6 +10,7 @@ import Blog from "./Components/Blog"
 import Contact from "./Components/Contact"
 import Product from "./Components/Product"
 import ApiProduct from "./Components/ApiProduct"
+import BlogDetails from "./Components/BlogDetails"
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/Contact" element={<Contact />} />
             <Route path="/product" element={<Product />} />
             <Route path="/product/:id" element={<ApiProduct />} />
+            <Route path="/Blog/:id" element={<BlogDetails />} />
 
           </Route>
         </Routes>
